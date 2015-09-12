@@ -75,7 +75,7 @@ def plot_circle(ax, c, r, alpha):
 def plot_length_distr_and_chords(lengths, R, solution_pct,
 			triangle_edge_length, solution_coord_a, solution_coord_b, N):
 	fig, ax = plt.subplots(1, 2, figsize = (12, 5))
-	for i in range(len(ax)): ax[i].axis('off')
+	ax[1].axis('off')
 
 	# plot distribution of chord lengths
 	_tmp = plot_chord_length_distribution(ax[0], lengths, R,
