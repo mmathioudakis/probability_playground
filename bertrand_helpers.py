@@ -113,21 +113,21 @@ def plot_solution_for_small_vs_large(solution_A_pct, sol_A_small_pct,
 
 	fig, ax = plt.subplots(1, 3, figsize = (15, 5))
 
-	_tmp = ax[0].set(xlim = (-0.5, 1.5), ylim = (0,100), xticks = [0, 1],
-	                 xticklabels = ['Large', 'Small'],
-	                 yticks = [0, int(solution_A_pct), 100])
+	_tmp = ax[0].set(title = "Method A", xlim = (-0.5, 1.5), ylim = (0,100),
+				xticks = [0, 1], xticklabels = ['Large', 'Small'],
+		        yticks = [0, int(solution_A_pct), 100])
 	_tmp = ax[0].bar([0, 1], [solution_A_pct, sol_A_small_pct], width = 0.5,
 	                align = 'center', color = "blue")
 
-	_tmp = ax[1].set(xlim = (-0.5, 1.5), ylim = (0,100), xticks = [0, 1],
-	                 xticklabels = ['Large', 'Small'], 
-	                 yticks = [0, int(solution_B_pct), 100])
+	_tmp = ax[1].set(title = "Method B", xlim = (-0.5, 1.5), ylim = (0,100), 
+					xticks = [0, 1], xticklabels = ['Large', 'Small'], 
+	                yticks = [0, int(solution_B_pct), 100])
 	_tmp = ax[1].bar([0, 1], [solution_B_pct, sol_B_small_pct], width = 0.5,
 	                align = 'center', color = "red")
 	                 
-	_tmp = ax[2].set(xlim = (-0.5, 1.5), ylim = (0,100), xticks = [0, 1],
-	                 xticklabels = ['Large', 'Small'], 
-	                 yticks = [0, int(solution_C_pct), 100])
+	_tmp = ax[2].set(title = "Method C", xlim = (-0.5, 1.5), ylim = (0,100),
+					xticks = [0, 1], xticklabels = ['Large', 'Small'], 
+	                yticks = [0, int(solution_C_pct), 100])
 	_tmp = ax[2].bar([0, 1], [solution_C_pct, sol_C_small_pct], width = 0.5,
 	                align = 'center', color = "green")
 
