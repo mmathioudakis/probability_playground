@@ -1,3 +1,3 @@
 # probability_playground
 
-Simulations for probability riddles.
+Things I want to try out for fun -- e.g., simulations for probability riddles, implementation of learning algorithms, ... third case still missing.
